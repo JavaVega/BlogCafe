@@ -180,3 +180,28 @@ img {
         column-gap: 2rem;
     }
 }
+
+.curso{
+    border-bottom: 1px solid var(--gris);
+    margin: 3rem 0;
+}
+
+@media  (min-width: 768px){    
+    .curso{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+}
+.curso:last-of-type{
+    border: none;
+    margin: 0;
+}
+.curso__label{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.curso__informacion{
+    font-size: 2rem;
+    font-weight: normal;
+}

@@ -40,16 +40,23 @@
         </div>
     </header>
     <main class="contenedor">
-        <h2 class="centrar-texto"> Contacto </h2>
+        <h2 class="centrar-texto mayuscula"> Contacto </h2>
         <div class="contacto-bg"></div>
-        <form>
-            <div>
-                <label> Nombre </label>
-                <input type="text" placeholder="Tu nombre">
+        <form class="formulario">
+            <div class="campo">
+                <label class="campo__label" for="nombre"> Nombre </label>
+                <input class="campo__field" type="text" placeholder="Tu nombre" id="nombre">
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="e-mail"> E-mail </label>
+                <input class="campo__field" type="email" placeholder="e-mail" id="e-mail">
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="mensaje"> Mensaje </label>
+                <textarea class="campo__field campo__field--textarea" id="mensaje"> </textarea>
             </div>
             <div>
-                <label> Nombre </label>
-                <input type="text" placeholder="Tu nombre">
+                <input class="bottom bottom--primario" type="submit" value="Enviar">
             </div>
         </form>
     </main>
